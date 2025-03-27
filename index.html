@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style1.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+
+    <!-- Container principal -->
     <div class="container">
-      <ul class="menu1">
-          <li>
-            <a href="#">Dicas: Aquecimento</a>
-            
-            <ul>
-              <li><a href="aquecimento/nivel1.html">Nivel 1🌶</a></li>
-              <li><a href="aquecimento/nivel2.html">Nivel 2💋</a></li>
-              <li><a href="aquecimento/nivel3.html">Nivel 3😈</a></li>
-              <li><a href="aquecimento/nivel4.html">Nivel 4💦</a></li>
-              <li><a href="aquecimento/nivel5.html">Nivel 5⚡</a></li>
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="#">Dicas: 1</a>
+                    <ul class="submenu">
+                        <li><a href="aquecimento/nivel1.html">Nivel 1</a></li>
+                        <li><a href="aquecimento/nivel2.html">Nivel 2</a></li>
+                        <li><a href="aquecimento/nivel3.html">Nivel 3</a></li>
+                        <li><a href="aquecimento/nivel4.html">Nivel 4</a></li>
+                        <li><a href="aquecimento/nivel5.html">Nivel 5</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Dicas: 2</a>
+                    <ul class="submenu">
+                        <li><a href="#">Nivel 1</a></li>
+                        <li><a href="#">Nivel 2</a></li>
+                        <li><a href="#">Nivel 3</a></li>
+                        <li><a href="#">Nivel 4</a></li>
+                        <li><a href="#">Nivel 5</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Dicas: 3</a>
+                    <ul class="submenu">
+                        <li><a href="nivel1.html">Nivel 1</a></li>
+                        <li><a href="#">Nivel 2</a></li>
+                        <li><a href="#">Nivel 3</a></li>
+                        <li><a href="#">Nivel 4</a></li>
+                        <li><a href="#">Nivel 5</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Dicas: 4</a>
+                    <ul class="submenu">
+                        <li><a href="nivel1.html">Nivel 1</a></li>
+                        <li><a href="#">Nivel 2</a></li>
+                        <li><a href="#">Nivel 3</a></li>
+                        <li><a href="#">Nivel 4</a></li>
+                        <li><a href="#">Nivel 5</a></li>
+                    </ul>
+                </li>
             </ul>
-  
-            
-          </li>
-        </ul>
-        <ul class="menu2">
-          <li>
-            <a href="#">Dicas: Apimentado</a>
-            
-            <ul>
-              <li><a href="aquecimento/nivel1.html">Nivel 1🌶</a></li>
-              <li><a href="#">Nivel 2💋</a></li>
-              <li><a href="#">Nivel 3😈</a></li>
-              <li><a href="#">Nivel 4💦</a></li>
-              <li><a href="#">Nivel 5⚡</a></li>
-            </ul>
-          </ul>
-            
+        </nav>
+
+        <!-- Conteúdo principal -->
         <div class="box">
-        <h1 class="text">
-            Jogo do prazer🔥 
-        </h1>
-        <div class="btn">
-      <button class="items">
-          <a href="aquecimento.html">Aquecimento</a>
-      </button>
-      <button class="items">
-        Apimentado
-    </button>
-    <button class="items">
-        Safadezas
-    </button>
-    <button class="items">
-        Sem limites
-    </button>
+            <h1 class="text">My Game</h1>
+            <div class="btn">
+                <button onclick="window.location.href='aquecimento.html'" class="items">1</button>
+                <button onclick="window.location.href='apimentado.html'" class="items">2</button>
+                <button onclick="window.location.href='esquenta.html'" class="items">3</button>
+                <button onclick="window.location.href='sem-limites.html'" class="items">4</button>
+            </div>
         </div>
     </div>
-    
-                <ul class="menu4">
-                    <li>
-                      <a href="#">Dicas: Safadezas</a>
-                      
-                      <ul>
-                        <li><a href="nivel1.html">Nivel 1🌶</a></li>
-                        <li><a href="#">Nivel 2💋</a></li>
-                        <li><a href="#">Nivel 3😈</a></li>
-                        <li><a href="#">Nivel 4💦</a></li>
-                        <li><a href="#">Nivel 5⚡</a></li>
-                      </ul>
-                    </ul>
-                    <ul class="menu5">
-                        <li>
-                          <a href="#">Dicas: Sem limites</a>
-                          
-                          <ul>
-                            <li><a href="nivel1.html">Nivel 1🌶</a></li>
-                            <li><a href="#">Nivel 2💋</a></li>
-                            <li><a href="#">Nivel 3😈</a></li>
-                            <li><a href="#">Nivel 4💦</a></li>
-                            <li><a href="#">Nivel 5⚡</a></li>
-                          </ul>
-                        </ul>
-    </div>
+
 </body>
 </html>

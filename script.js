@@ -1,3 +1,41 @@
+// Inicializando os pontos para cada jogador
+let pontos1 = 0;
+let pontos2 = 0;
+
+// Referência aos elementos onde os pontos serão exibidos
+const pontos1Display = document.getElementById("pontos1");
+const pontos2Display = document.getElementById("pontos2");
+
+// Referência aos botões para adicionar pontos
+const addPontos1Button = document.getElementById("addPontos1");
+const addPontos2Button = document.getElementById("addPontos2");
+
+// Função para adicionar ponto para o Participante 1
+addPontos1Button.addEventListener("click", () => {
+    pontos1++;
+    pontos1Display.textContent = pontos1; // Atualiza os pontos do Participante 1
+    verificarVencedor();
+});
+
+// Função para adicionar ponto para o Participante 2
+addPontos2Button.addEventListener("click", () => {
+    pontos2++;
+    pontos2Display.textContent = pontos2; // Atualiza os pontos do Participante 2
+    verificarVencedor();
+});
+
+// Função para verificar quem é o vencedor
+function verificarVencedor() {
+    if (pontos1 > pontos2) {
+        alert("Participante 1 está vencendo!");
+    } else if (pontos2 > pontos1) {
+        alert("Participante 2 está vencendo!");
+    } else {
+        alert("Empate! Ambos os participantes têm a mesma quantidade de pontos.");
+    }
+}
+
+
 const palavras = [
     "🌶Beijo francês prolongado", "🌶Massagem nas mãos com óleo", "🌶Elogio Intimo", "🌶Dança lenta apertada", "🌶Caricia nos cabelos",
     "💋Beijo no pescoço + sopro", "💋Mordidinha no ombro", "💋Strip truco", "💋Venda nos olhos + alimentação", "💋Jogo dos sentidos",
